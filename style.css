@@ -1,3 +1,39 @@
+
+.structural-selectors-block {
+  border: 1px solid black;
+}
+
+.structural-heading-2 {
+  text-align: center;
+  color:darkcyan;
+  font-weight: bold;
+}
+
+/* ul > li */
+li:first-of-type,
+li:last-of-type {
+  font-weight: bold;
+  text-decoration: line-through;
+}
+
+li:nth-of-type(even) {
+  background-color: #ccc;
+}
+
+li:nth-of-type(3) {
+  color:darkseagreen;
+}
+
+li:nth-of-type(4n) {
+  color: chocolate;
+}
+
+li:nth-of-type(3n-1 ) {
+  text-align: right;
+}
+
+
+/* checkbox-section */
 input[type='checkbox']:checked +label {
   color: green;
 }
